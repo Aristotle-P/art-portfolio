@@ -5,11 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Art = props => {
-  const {
-    location: {
-      state: { myTitle }
-    }
-  } = props;
+  const { myTitle } = props.location.state;
   return (
     <div>
       <h1>{myTitle}</h1>

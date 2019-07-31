@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuItem from '../MenuItem';
 
-const Menu = () => {
+const SideNav = () => {
   const menu = [
     'Home',
     'Original Art',
@@ -10,12 +10,17 @@ const Menu = () => {
     'About',
     'Contact'
   ];
-  const menuItems = menu.map((item, index) => {
+  const navItems = menu.map((item, index) => {
     // eslint-disable-next-line react/no-array-index-key
     return <MenuItem key={index} index={index} title={item} />;
   });
 
-  return <div>{menuItems}</div>;
+  return (
+    <div>
+      <div style={{ height: 200, width: 200, backgroundColor: 'blue' }} />
+      {navItems}
+    </div>
+  );
 };
 
-export default Menu;
+export default SideNav;
