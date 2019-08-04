@@ -1,14 +1,13 @@
 import React from 'react';
 import GalleryItem from './GalleryItem';
+import urls from '../../utils/imgHelper';
 
-const urls = ['/images/coding.png'];
+const images = urls.map(img => {
+  return <GalleryItem imageUrl={img} />;
+});
 
 const Gallery = () => {
-  return (
-    <div>
-      <GalleryItem imageUrl={urls[0]} />
-    </div>
-  );
+  return <div>{images}</div>;
 };
 
 export default Gallery;

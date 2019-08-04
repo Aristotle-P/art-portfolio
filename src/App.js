@@ -7,7 +7,6 @@ import Art from './components/static_pages/Art';
 import Home from './components/static_pages/Home';
 import About from './components/static_pages/About';
 import Contact from './components/static_pages/Contact';
-import Gallery from './components/layout/Gallery';
 import Footer from './components/layout/Footer';
 
 const App = () => {
@@ -16,7 +15,6 @@ const App = () => {
       <div className="App">
         <SideNav />
         {/* <Navbar /> */}
-        <Gallery />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/art/:gallery" component={Art} />
