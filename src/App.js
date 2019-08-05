@@ -7,6 +7,7 @@ import Art from './components/static_pages/Art';
 import Home from './components/static_pages/Home';
 import About from './components/static_pages/About';
 import Contact from './components/static_pages/Contact';
+import Carousel from './components/layout/desktop/Carousel';
 import Footer from './components/layout/Footer';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <SideNav />
+        <Carousel />
         {/* <Navbar /> */}
         <Switch>
           <Route exact path="/" component={Home} />
