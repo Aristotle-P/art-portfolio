@@ -2,8 +2,8 @@ import React from 'react';
 import GalleryItem from './GalleryItem';
 import urls from '../../utils/imgHelper';
 
-const images = urls.map(img => {
-  return <GalleryItem imageUrl={img} />;
+const images = urls.map((img, index) => {
+  return <GalleryItem imageUrl={img} key={index} />;
 });
 
 const Gallery = () => {

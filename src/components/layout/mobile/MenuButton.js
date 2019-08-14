@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import Menu from './Menu';
+import '../../../styles/layout/mobile/MenuButton.css';
 
 const MenuButton = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   let menu;
   if (menuOpen) {
     menu = <Menu />;
   }
+
   return (
     <div>
       <button
@@ -14,7 +17,7 @@ const MenuButton = () => {
         className="hamburgerButton"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        Click me!
+        <span className={menuOpen ? 'fa fa-times' : 'fa fa-bars'} />
       </button>
       {menu}
     </div>
