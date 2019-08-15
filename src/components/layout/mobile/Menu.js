@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuItem from '../MenuItem';
+import '../../../styles/layout/mobile/Menu.css';
 
 const Menu = () => {
   const menu = [
@@ -15,7 +16,7 @@ const Menu = () => {
     return <MenuItem key={index} index={index} title={item} />;
   });
 
-  return <div>{menuItems}</div>;
+  return <div className="menu">{menuItems}</div>;
 };
 
 export default Menu;

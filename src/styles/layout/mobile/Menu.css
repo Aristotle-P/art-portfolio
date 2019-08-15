@@ -1,0 +1,10 @@
+.menu {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  opacity: 0.6;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+}

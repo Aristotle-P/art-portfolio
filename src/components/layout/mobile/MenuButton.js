@@ -14,7 +14,7 @@ const MenuButton = () => {
     <div>
       <button
         type="button"
-        className="hamburgerButton"
+        className="hamburger-button"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <span className={menuOpen ? 'fa fa-times' : 'fa fa-bars'} />
