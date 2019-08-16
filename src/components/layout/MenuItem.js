@@ -8,7 +8,7 @@ const MenuItem = ({ title }) => {
   const [myTitle] = useState(title);
 
   return (
-    <div>
+    <div className="link-container">
       <Link
         to={{
           pathname: `/${getUrl(title)}`,

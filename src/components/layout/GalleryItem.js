@@ -3,17 +3,23 @@ import PropTypes from 'prop-types';
 
 const GalleryItem = ({ imageUrl }) => {
   const styles = {
-    height: '100px',
-    width: '150px'
+    height: '33%',
+    width: '100%'
+  };
+
+  const divStyle = {
+    alignItems: 'center'
   };
 
   return (
-    <div>
-      <img
-        src={`${process.env.PUBLIC_URL}${imageUrl}`}
-        alt="Not sure"
-        style={styles}
-      />
+    <div style={divStyle}>
+      <a href="#">
+        <img
+          src={`${process.env.PUBLIC_URL}${imageUrl}`}
+          alt="Not sure"
+          style={styles}
+        />
+      </a>
     </div>
   );
 };

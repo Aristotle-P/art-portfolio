@@ -1,0 +1,11 @@
+.social-links {
+  height: 1em;
+  width: 1em;
+  background-color: green;
+}
+
+.footer-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+}

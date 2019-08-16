@@ -1,11 +1,7 @@
 .hamburger-button {
-  margin: 0;
-  padding: 0;
+  margin-right: 1em;
   background-color: transparent;
   border: 0;
-  position: absolute;
-  top: 1em;
-  right: 1em;
   z-index: 2;
   font-size: 1.1em;
   transition: all 0.3s ease;
@@ -16,18 +12,6 @@
   color: blue;
 }
 
-.fa-bars {
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.fa-times {
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.fa-times:active {
-  opacity: 0;
-}
-
-.fa-bars:active {
-  opacity: 0;
+.button-container {
+  display: flex;
 }

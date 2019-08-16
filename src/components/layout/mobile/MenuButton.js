@@ -11,7 +11,7 @@ const MenuButton = () => {
   }
 
   return (
-    <div>
+    <div className="button-container">
       <button
         type="button"
         className="hamburger-button"

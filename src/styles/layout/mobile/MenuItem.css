@@ -3,4 +3,11 @@
   text-decoration: none;
   position: relative;
   z-index: 2;
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
 }

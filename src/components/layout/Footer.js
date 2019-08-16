@@ -1,17 +1,12 @@
 import React from 'react';
+import '../../styles/layout/Footer.css';
 
-const divStyle = {
-  height: 15,
-  width: 15,
-  backgroundColor: 'green',
-  margin: 40
-};
 const Footer = () => {
   return (
-    <div>
-      <div className="socialLinks" style={divStyle} />
-      <div className="socialLinks" style={divStyle} />
-      <div className="socialLinks" style={divStyle} />
+    <div className="footer-container">
+      <div className="social-links" />
+      <div className="social-links" />
+      <div className="social-links" />
     </div>
   );
 };
