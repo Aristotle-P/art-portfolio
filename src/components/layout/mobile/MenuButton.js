@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Menu from './Menu';
 import '../../../styles/layout/mobile/MenuButton.css';
 
 const MenuButton = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const button = useRef(null);
 
   let menu;
   if (menuOpen) {
@@ -15,7 +16,11 @@ const MenuButton = () => {
       <button
         type="button"
         className="hamburger-button"
-        onClick={() => setMenuOpen(!menuOpen)}
+        ref={button}
+        onClick={() => {
+          setMenuOpen(!menuOpen);
+          button.current.blur();
+        }}
       >
         <span className={menuOpen ? 'fa fa-times' : 'fa fa-bars'} />
       </button>

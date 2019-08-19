@@ -1,11 +1,21 @@
-.social-links {
-  height: 1em;
-  width: 1em;
-  background-color: green;
-}
-
 .footer-container {
   flex-shrink: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.social-links {
+  color: #222;
+  font-size: 1.3em;
+  margin-right: 1em;
+}
+
+.social-links:last-child {
+  margin-right: 0;
+}
+
+.social-links:visited {
+  color: #222;
 }
