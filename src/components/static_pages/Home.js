@@ -3,10 +3,12 @@ import React from 'react';
 import Gallery from '../layout/Gallery';
 
 const Home = () => {
+  const links = ['art/original-art', 'art/fan-art', 'art/commissions'];
+  const linkTitles = ['Original Art', 'Fan Art', 'Commissions'];
   return (
     <div>
       {/* <Carousel /> */}
-      <Gallery />
+      <Gallery links={links} linkTitles={linkTitles} />
     </div>
   );
 };

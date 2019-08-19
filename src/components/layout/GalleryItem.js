@@ -1,31 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import '../../styles/layout/GalleryItem.css';
 
-const GalleryItem = ({ imageUrl }) => {
-  const styles = {
-    height: '33%',
-    width: '100%'
-  };
-
-  const divStyle = {
-    alignItems: 'center'
-  };
+const GalleryItem = ({ imageUrl, link, linkTitle }) => {
+  const [myTitle] = useState(linkTitle);
 
   return (
-    <div style={divStyle}>
-      <a href="#">
+    <div className="gallery-item-container">
+      <Link
+        to={{
+          pathname: `/${link}`,
+          state: { myTitle }
+        }}
+        className="gallery-link"
+      >
         <img
           src={`${process.env.PUBLIC_URL}${imageUrl}`}
           alt="Not sure"
-          style={styles}
+          className="image"
         />
-      </a>
+        <h3 className="gallery-text">{linkTitle}</h3>
+      </Link>
     </div>
   );
 };
 
 GalleryItem.propTypes = {
-  imageUrl: PropTypes.string.isRequired
+  imageUrl: PropTypes.string.isRequired,
+  linkTitle: PropTypes.string,
+  link: PropTypes.string
+};
+
+GalleryItem.defaultProps = {
+  link: '',
+  linkTitle: ''
 };
 
 export default GalleryItem;

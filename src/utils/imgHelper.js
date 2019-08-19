@@ -1,3 +1,3 @@
-const urls = ['/images/coding.png', '/images/leica.jpg', '/images/cle.jpg'];
+const imgUrls = ['/images/coding.png', '/images/leica.jpg', '/images/cle.jpg'];
 
-export default urls;
+export default imgUrls;
